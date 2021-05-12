@@ -1,6 +1,7 @@
 # CHAN-DST (수정)
+여러 error들을 디버깅
 
-[[깃헙링크](https://github.com/smartyfh/CHAN-DST)]
+[[원본깃헙링크](https://github.com/smartyfh/CHAN-DST)]
 
 Code for our ACL 2020 paper: **A Contextual Hierarchical Attention Network with Adaptive Objective for Dialogue State Tracking. Yong Shan, Zekang Li, Jinchao Zhang, Fandong Meng, Yang Feng, Cheng Niu, Jie Zhou. ACL 2020 *(Long)***. [[arxiv](https://arxiv.org/abs/2006.01554)]
 [[논문링크](https://www.aclweb.org/anthology/2020.acl-main.563.pdf)]
