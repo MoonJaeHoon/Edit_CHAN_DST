@@ -80,3 +80,12 @@ If you find this code useful, please cite as:
   year={2020}
 }
 ```
+---
+## 수정사항
+CHAN-DST 공식 레포 코드를 가져와서 실제 훈련시 사용했던 MultiWOZ 데이터에 대해서 그대로 돌렸을 때 많은 에러들이 발생, (pytorch 버전이 맞지 않는 이슈, nonzero메소드 변경, [mask 관련 turn_mask 등]에서 tensor byte→bool type변경 등)
+
+CHAN-DST 코드를 MultiWOS 데이터(우리데이터)에 적용하기 위해 데이터의 형식을 바꾸어주었음 (tsv 파일로 변경), 내부 코드 또한 huggingface tranformers의 pretrained BertModel을 가져오기 위해 변경해주었음
+
+CHAN-DST 코드를 MultiWOS 데이터에 적용해보았는데, model_adaptive_finetune.py 만 적용해볼 수 있었다. (CHAN-DST는 pretrained → fine-tuning까지 모두 거치는 과정이 포함되어있는데 불가능하였음)
+
+CHAN-DST (only fine-tuning) 결과 도출 후 inference, LB 제출 & MultiWOZ와 달리 MultiWOS(우리데이터)에서의 한계점을 파악하였음
